@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Header from './header'
+import Search from './search'
 
 class App extends Component {
 
@@ -7,7 +9,13 @@ class App extends Component {
   }
 
   render () {
-    return <h1>Welcome to {this.props.name}</h1>
+    return (
+    	<div>
+	    	<h1>Welcome to {this.props.name}</h1>
+	 		<Search />
+	    	<Header />
+    	</div>
+	)
   }
 
 }
